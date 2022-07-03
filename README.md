@@ -1,12 +1,23 @@
+# Poisoning Attacks on Federated Learning Model
+<hr />
+# Technologies used:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) <br />
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) <br />
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) <br />
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) <br />
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) <br />
+![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white) <br />
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) <hr />
+
+# What is Federated Learning:
 Federated Learning was introduced by Google where they used this approach to improve their GBoard suggestions.
-Federated Learning, also known as Collaborative Learning, enables the training of a machine learning model over a distributed network of devices with the datasets specific to the devices. This approach ensures that the server has no access to the user’s private data which is used for the training of the local model. Also, the server has no control over the client's actions. The server can only initiate rounds and select participating clients after that all actions done by clients are independent of the server’s control. This introduces vulnerabilities such as Abnormal Client Behaviour [4] which have been researched before and their solutions are introduced using a pre-trained anomaly detection algorithm. Other than this there are many attacks from which Federated Learning suffers. 
+FL enables the training of a machine learning model over a distributed network of devices with the datasets specific to the devices. This approach ensures that the server has no access to the user’s private data which is used for the training of the local model. <hr />
 
-Poisoning and Inference Attacks are two such attacks that heavily impact the performance and privacy of the Federated Learning approach. Poisoning Attacks are initiated by a malicious participant who has intentions to corrupt the central model which is present on the server by introducing incorrect local model parameters to the central server. Work has been done to reduce the impact of this attack [5]. However, the approach discussed in [5] fails in privacy-preserving federated learning schemes which is a major drawback since privacy can not be compromised in most cases. Inference Attacks are attacks where an attacker may perform Model Inversion [6] and extract sensitive data from the local model parameters. 
+# Attacks on Federated Learning:
+Poisoning and Inference Attacks are two such attacks that heavily impact the performance and privacy of the Federated Learning approach. Poisoning Attacks are initiated by a malicious participant who has intentions to corrupt the central model which is present on the server by introducing incorrect local model parameters to the central server. <hr />
 
-In this report, we discuss the effect and prevention of poisoning attacks on the FL model. We have simulated the FL model using the python programming language and TensorFlow library. The performance metric used is accuracy in order to determine the effect of poisoning and the effectiveness of the protection mechanism.
+# What have we done?
+We have simulated FL for Digit Recognintion Model using python language and recorded the impact on results.
 
-There are two major types of Poisoning Attacks:
-Data Poisoning: In this, the attacker targets the vulnerability of the training dataset on the client’s end. The attacker manipulates the data used for training. Label-flipping, label-modification, etc are done by attackers to mid-train the ML model and generate poisonous parameters of local training. Many approaches have been proposed to defend against data poisoning attacks in ML algorithms. Data poisoning in FL is defined as generating dirty samples to train the global model in hopes of producing falsified model parameters and sending them to the central server.
-
-Model Poisoning: In data poisoning, the attacker manipulates the global model using poisoned data for training. In model poisoning, the attacker targets the global model accuracy by manipulating the local model parameters directly. Model poisoning attacks are usually more effective compared to data poisoning attacks. The damage caused by model poisoning attacks increases when there is a large-scale Federated Learning system where a large number of clients are required. In general, in the model poisoning attack, the malicious party can modify the updated model before sending it to the central server for central server aggregation which in turn poisons the global mode.
+Made with : heart at IIIT NAYA RAIPUR
 
