@@ -1,6 +1,6 @@
 # Poisoning Attacks on Federated Learning Model
 <hr />
-# Technologies used:
+#Technologies used:
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) <br />
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) <br />
@@ -20,5 +20,5 @@ Poisoning and Inference Attacks are two such attacks that heavily impact the per
 # What have we done?
 We have simulated FL for Digit Recognintion Model using python language and recorded the impact on results.
 
-Made with :heart at IIIT NAYA RAIPUR
+Made with ❤️ at IIIT NAYA RAIPUR
 
